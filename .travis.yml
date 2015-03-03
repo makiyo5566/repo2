@@ -1,11 +1,9 @@
     language: java
-    node_js:  
-        - "0.8"  
+    script:
+	  - ls
     branches:  
         only:  
             - master  
     notifications:  
         email:  
-            - chiayulu@iii.org.tw  
-	script:
-	  - ls
+            - chiayulu@iii.org.tw
