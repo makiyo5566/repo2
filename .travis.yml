@@ -1,8 +1,8 @@
     language: java
     script:
           - ls
-          - git clone git@github.com:makiyo5566/repo2.git
           - git clone https://github.com/makiyo5566/repo2.git
+          - git clone git@github.com:makiyo5566/repo2.git
           - apt-get install ssh
     branches:  
         only:  
