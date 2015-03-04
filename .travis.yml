@@ -1,8 +1,7 @@
     language: java
+    key: qwertyuiop
     script:
-          -   secure: "LwTuoZ1QBuMbkOAtwKqr+/Ti19dgHsEKeO6KMLstDMfNhk+8EMQmIC+kYqmkAyKMrSeMX
-uvQHYSfUC3zrSWKb379q6l3D88zFbGDKpdgRAmLcP7Mo56HE4dQLWwF7GvxFlTWdo5bA3ZfMdA3uIUkC
-QS/HD5g34qGPC9uEEe1YZU="
+          - echo ${key}
           - git clone git@github.com:makiyo5566/repo2.git
           - apt-get install ssh
           - git clone https://github.com/makiyo5566/repo2.git
