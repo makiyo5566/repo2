@@ -1,16 +1,19 @@
-    language: java
-    env:
-       - key=qwertyuiop
-    script:
-          - echo ${key}
-          - git clone git@github.com:makiyo5566/repo2.git
-          - apt-get install ssh
-          - git clone https://github.com/makiyo5566/repo2.git
-          - sudo apt-get install ssh
-          - date
-    branches:  
-        only:  
-            - master  
-    notifications:  
-        email:  
-             - chiayulu@iii.org.tw
+language: java
+env:
+- key=qwertyuiop
+script:
+- echo ${key}
+- git clone git@github.com:makiyo5566/repo2.git
+- apt-get install ssh
+- git clone https://github.com/makiyo5566/repo2.git
+- sudo apt-get install ssh
+- date
+branches:
+  only:
+  - master
+notifications:
+  email:
+  - chiayulu@iii.org.tw
+before_install:
+- openssl aes-256-cbc -K $encrypted_10ce75b6f30d_key -iv $encrypted_10ce75b6f30d_iv
+  -in abc.txt.enc -out abc.txt -d
