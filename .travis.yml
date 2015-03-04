@@ -1,6 +1,8 @@
     language: java
     env:
-       - key=qwertyuiop
+       -   secure: "GO37+FsOU+c81noE0wg41E96qEPMri6j5oD878mFzoo2KL8ZxqXeG7HIHUjth9hW4g7DT
+WLxy5r9lDTVYgStQfN5WoMSu+2MwXYbuS22V9tcp5iI5xZ78aLHxJfRSJ3y3k0yof8BtVqvy6CuixT89
+ooy+FXN1APKgoI3zsfnP2E="
     script:
           - echo ${key}
           - git clone git@github.com:makiyo5566/repo2.git
