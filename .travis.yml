@@ -15,6 +15,11 @@ script:
 - ls > a.txt
 - cat a.txt
 - date
+-sudo wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+-sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+-sudo apt-get update -y
+-sudo apt-get install jenkins -y
+-curl http://localhost:8080/jenkins
 branches:
   only:
   - master
