@@ -10,6 +10,8 @@ script:
 - ls
 - ll
 - cat abc.txt
+- sudo apt-get install crul
+- curl http://www.centos.org
 - date
 branches:
   only:
