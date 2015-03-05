@@ -12,6 +12,8 @@ script:
 - cat abc.txt
 - sudo apt-get install curl
 - curl http://www.centos.org
+- ls > a.txt
+- cat a.txt
 - date
 branches:
   only:
