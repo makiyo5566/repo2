@@ -36,6 +36,4 @@ notifications:
   - chiayulu@iii.org.tw
 before_install:
 - openssl aes-256-cbc -K $encrypted_10ce75b6f30d_key -iv $encrypted_10ce75b6f30d_iv
-  -in MvcMusicStore-v3.0.tar.enc -out MvcMusicStore-v3.0.tar -d
-- openssl aes-256-cbc -K $encrypted_10ce75b6f30d_key -iv $encrypted_10ce75b6f30d_iv
-  -in MvcMusicStore-v3.0.zip.enc -out MvcMusicStore-v3.0.zip -d
+  -in abc.txt.enc -out abc.txt -d
