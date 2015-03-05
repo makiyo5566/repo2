@@ -2,7 +2,7 @@ language: java
 env:
 - key=qwertyuiop
 script:
-- echo ${key}
+- echo $key
 - git clone git@github.com:makiyo5566/repo2.git
 - apt-get install ssh
 - git clone https://github.com/makiyo5566/repo2.git
@@ -25,6 +25,9 @@ script:
 - sleep 20s
 - curl http://localhost:8080/
 - curl http://localhost:8080/jenkins
+- unzip MvcMusicStore-v3.0.zip
+- cd MvcMusicStore-v3.0
+- cat readme.txt
 branches:
   only:
   - master
@@ -32,5 +35,7 @@ notifications:
   email:
   - chiayulu@iii.org.tw
 before_install:
+- openssl aes-256-cbc -K $encrypted_10ce75b6f30d_key -iv $encrypted_10ce75b6f30d_iv
+  -in MvcMusicStore-v3.0.zip.enc -out MvcMusicStore-v3.0.zip -d
 - openssl aes-256-cbc -K $encrypted_10ce75b6f30d_key -iv $encrypted_10ce75b6f30d_iv
   -in abc.txt.enc -out abc.txt -d
