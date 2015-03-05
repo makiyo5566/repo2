@@ -20,6 +20,8 @@ script:
 - sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
 - sudo apt-get update -y
 - sudo apt-get install jenkins -y
+- ls /etc/init.d/
+- /etc/init.d/jenkins start
 - curl http://localhost:8080/
 - curl http://localhost:8080/jenkins
 branches:
